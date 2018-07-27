@@ -8,7 +8,7 @@
 
 #import "LDSHTTPConnection.h"
 #import "HTTPLogging.h"
-#import "NSString+hash.h"
+
 @protocol GCDAsyncSocketDelegate;
 
 // Log levels : off, error, warn, info, verbose

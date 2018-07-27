@@ -7,7 +7,6 @@
 //
 
 #import "LDSTokenConnection.h"
-#import "NSString+hash.h"
 #import "HTTPLogging.h"
 // Log levels : off, error, warn, info, verbose
 // Other flags: trace
@@ -47,8 +46,8 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE | HTTP_LOG_FLAG_TRACE;
     
     // You can do all kinds of cool stuff here.
     // For simplicity, we're not going to check the username, only the password.
-    
-    return [NSString sha1:@"smarthome"];
+    NSString *key = @"smarthome.amsl";
+    return [NSString stringWithFormat:@"%ld",key.hash];
 }
 
 @end
