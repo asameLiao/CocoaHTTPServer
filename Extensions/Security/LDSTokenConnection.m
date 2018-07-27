@@ -46,7 +46,7 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_VERBOSE | HTTP_LOG_FLAG_TRACE;
     
     // You can do all kinds of cool stuff here.
     // For simplicity, we're not going to check the username, only the password.
-    NSString *key = @"smarthome.amsl";
+    NSString *key = @"your.auth.key";
     return [NSString stringWithFormat:@"%ld",key.hash];
 }
 
