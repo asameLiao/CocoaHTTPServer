@@ -455,8 +455,8 @@ static NSMutableArray *recentNonces;
 		}
 		
 		NSString *url = [[request url] relativePath];
-        	NSString *uri = [[NSURL URLWithString:[auth uri]] relativePath];
-        	if (![url isEqualToString:uri])
+        NSString *uri = [[NSURL URLWithString:[auth uri]] relativePath];
+        if (![url isEqualToString:uri])
 		{
 			// Requested URL and Authorization URI do not match
 			// This could be a replay attack
