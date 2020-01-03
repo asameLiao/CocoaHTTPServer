@@ -46,7 +46,7 @@
  * This means you can pass it multiple variables just like NSLog.
 **/
 
-#import "DDLog.h"
+#import <CocoaLumberjack/DDLog.h>
 /********************************************************
  step1 #import <CocoaLumberjack/CocoaLumberjack.h> in file HTTPLogging.h
  Step2: replace all HTTP_LOG_OBJC_MAYBE with HTTP_LOG_OBJC_MAYBE and all LOG_C_MAYBE with HTTP_LOG_C_MAYBE in file HTTPLogging.h
